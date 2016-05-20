@@ -1,0 +1,14 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{roboto}[05/06/2015 1.0.0 Roboto fonts package]
+
+\RequirePackage{ifxetex}
+\ifxetex
+  \usepackage{polyglossia}
+  \usepackage{fontspec}
+  \usepackage{xunicode}
+  \defaultfontfeatures{Mapping=tex-text}
+  \setmainfont[Path=./fonts/,Scale=0.95,BoldFont=*-bold,ItalicFont=*-LightItalic]{Roboto}
+  \setsansfont[Path=./fonts/,Scale=0.95,BoldFont=*-bold,ItalicFont=*-LightItalic]{Roboto}
+  \setmonofont[Path=./fonts/,Scale=0.85]{Menlo}
+\fi
+\endinput
