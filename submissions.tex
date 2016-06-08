@@ -1,0 +1,245 @@
+\documentclass{article}
+\begin{document}
+\section*{DropNeuron: An Approach for Simplifying the Structure of Deep Neural
+Networks}
+
+Deep learning using multi-layer neural networks (NNs) architecture manifests
+superb power in modern machine learning systems. The trained NNs are typically
+large. The question we would like to address is whether it is possible to
+simplify the NN during training process to achieve a reasonable performance
+within an acceptable computational time We presented a novel approach of
+optimising a deep neural network through regularisation of network architecture.
+We proposed regularisers which support a simple mechanism of dropping neurons
+during a network training process. The method supports the construction of a
+simpler deep neural networks with compatible performance with its simplified
+version. We evaluate the proposed method with a few examples including sparse
+linear regression and deep autoencoder. The valuations demonstrate excellent
+performance.
+
+Wei Pan
+w.pan11@imperial.ac.uk
+
+% ----------------------------------------------------------------------------
+\section*{Transfer Learning for Optimal Configuration of Big Data Software}
+
+Big Data software systems typically consist of an extensible execution engine
+(e.g., MapReduce), pluggable distributed storage engines (e.g., Apache
+Cassandra), and a range of data sources (e.g., Apache Kafka). Each of these
+frameworks is highly configurable. While configurability has several benefits,
+it challenges performance tuning. Often, the influence of a configuration option
+on software performance are difficult to understand, making performance tuning a
+daunting task. This problem is further complicated by the fact that different
+parameters may interact with each other and by the exponential size of the
+configuration space. To tackle this issue, we propose a method for transferring
+the performance tuning knowledge gained from previous versions of the software
+system in order to ease the search for an optimal configuration in the current
+version under test. The method is called Transfer Learning for Configuration
+Optimization (TL4CO) and leverages Multi-Task Gaussian Processes (MTGPs) to
+iteratively capture posterior distributions of the configuration spaces. Past
+experimental measurements are treated as transferable knowledge to bootstrap the
+configuration tuning process. Validation based on three stream processing
+systems and a NoSQL benchmark system shows that TL4CO significantly speeds up
+the optimization process compared to state-of-the-art software configuration
+approaches.
+
+Pooyan Jamshidi
+p.jamshidi@imperial.ac.uk
+% ----------------------------------------------------------------------------
+\section*{Deep Learning via Simulation for Robot Grasping}
+
+Consider a robot which is asked to clear away objects from a messy table. This
+requires the robot to observe its local environment with a camera, make
+decisions about where to send its hand and fingers, and then control their
+movement for grasping and manipulating these objects. But whilst this seems a
+trivial task for humans, robots do not benefit from millions of years of
+evolution of the brain's visual cortex; they simply see a list of numbers
+representing the pixels in an image. Therefore, a newly-built robot has to learn
+these abilities, and how to interpret these pixels, from scratch. Recently, it
+has been shown that robots which learn visual perception by themselves with
+minimal supervision, are more effective than those which are hand-engineered by
+humans. In this talk, I will discuss ways in which neural networks and "deep
+learning" can encourage robots to autonomously learn how to grasp objects,
+directly mapping pixels in an image to a higher-level, meaningful understanding
+of the environment. In particular, I will introduce a method to generate
+large-scale training data using a physics simulator and synthetic rendering of
+3D objects, such that a robot can be taught to robustly grasp objects without
+ever having done so in real life.
+
+Edward Johns
+e.johns@imperial.ac.uk
+% ----------------------------------------------------------------------------
+\section*{Static Deadlock Detection for Go based on Session Graph Synthesis}
+
+I will present a static deadlock detector based on session types for the Go
+programming language developed by Google. The multicore programming language
+provides channel-based concurrency features based on CSP/process calculi, from
+which our analysis tool extract the communication operations as Session Types.
+The session types are then converted to Communicating Finite State Machines
+(CFSMs), which we apply a recent theoretical result on choreography synthesis to
+generate a global graph representing the overall communication pattern of a
+concurrent program. If the synthesis is successful, then the program is free
+from communication errors and deadlocks.
+
+Nicholas Ng
+nickng@imperial.ac.uk
+% ----------------------------------------------------------------------------
+\section*{Learning for 3D Scene Understanding}
+
+Much of the success story of computer vision has evolved around the ability to
+reconstruct accurate and real-time 3D maps of the scenes using a video stream of
+RGB and recently RGB-D frames. However, only geometric understanding of the
+scenes is not sufficient to carry out various high level tasks that require
+interaction, manipulation and searching. Using recent advances in deep learning
+and leveraging large quantity of training data from labelled synthetic 3D
+scenes, we show how such semantic understanding can be achieved to allow
+reasoning and interaction at the level of objects, often needed to carry out
+those high level tasks.
+
+Ankur Handa
+handa.ankur@gmail.com
+% ----------------------------------------------------------------------------
+\section*{Deep Learning for Human Activity Recognition: A Resource Efficient
+Implementation on Low-Power Devices}
+
+Human Activity Recognition provides valuable contextual information for
+wellbeing, healthcare, and sport applications. Over the past decades, many
+machine learning approaches have been proposed to identify activities from
+inertial sensor data for specific applications. Most methods, however, are
+designed for offline processing rather than processing on the sensor node. In
+this paper, a human activity recognition technique based on a deep learning
+methodology is designed to enable accurate and real-time classification for
+low-power wearable devices. To obtain invariance against changes in sensor
+orientation, sensor placement, and in sensor acquisition rates, we design a
+feature generation process that is applied to the spectral domain of the
+inertial data. Specifically, the proposed method uses sums of temporal
+convolutions of the transformed input. Accuracy of the proposed approach is
+evaluated against the current state-of-the-art methods using both laboratory and
+real world activity datasets. A systematic analysis of the feature generation
+parameters and a comparison of activity recognition computation times on mobile
+devices and sensor nodes are also presented.
+
+Charence Wong
+charence.wong05@imperial.ac.uk
+% ----------------------------------------------------------------------------
+\section*{Computational imaging for digitizing shape and appearance of "hard-to-scan"
+materials}
+
+Scanning geometry and appearance of real objects is an important
+part of computer graphics. Unfortunately, not every object is easy to digitize.
+One reason is the complicated nature of some objects (for example glass
+objects). Another reason is that most of the outdoors objects are impossible to
+bring to the laboratory environment, where they can be reliably scanned.
+
+In my talk I will speak in more details about our recent results for each of
+these cases. One part of my talk will be dedicated to our transmission imaging
+based approach to solve the problem of reconstruction of symmetric glass objects
+with liquids inside. Second part of my talk will cover our polarization imaging
+method for on-site acquisition of surface reflectance for planar materials in
+uncontrolled outdoor environments.
+
+
+Ilya Reshetouski
+i.reshetouski@imperial.ac.uk
+% ----------------------------------------------------------------------------
+\section*{Semantic Segmentation on Embedded Hyperspectral Images for Brain Cancer
+Detection}
+
+
+This work proposes a method to delineate the exact boundaries of
+tumours during a brain cancer resection. The novel aspect of the proposed
+solution is the use of hyperspectral imaging that is a non-contact, non-ionizing
+and minimally-invasive sensing technique. Previous work demonstrates that
+hyperspectral imaging can be used for certain cancer detection in animals, but
+no application for real-time cancer detection in the human brain has been
+proposed so far. However, working with hyperspectral images is not
+straightforward since they present a high dimensionality that makes real-time
+processing hard to achieve. Therefore, in order to handle hyperspectral images
+adequately we decided to apply a dimensional reduction algorithm with the
+purpose to cut down its dimensionality. Many algorithms for dimensionality
+reduction have been developed in the past, but their assessment is not easy to
+formalize. For this reason, we propose also a novel formula to judge the quality
+of a given mapping and the suitability of a specific technique. Moreover,
+existing state-of-the-art approaches for dimensional reduction can be time
+consuming and may not guarantee a consistent embedding. This is due to the lack
+of a fixed coordinate system which prohibits the tissue characterization across
+different images. Consequently, we have designed a novel manifold embedding
+method based on the T-distributed stochastic neighbour (t-SNE) to overcome these
+issues. A database containing 33 images collected from 18 different operations
+and the relative ground truth maps have been created through a semi-automatic
+process. To evaluate the proposed manifold embedding, we have compared our
+solution with 22 other different state-of-the-art methods. According to the
+experiments, our proposed algorithm provides the best results. To finally obtain
+the tumour classification map, a semantic segmentation approach is performed on
+the embedded images using an existing approach called DCT-STF (Discrete Cosine
+Transform - Semantic Texton Forest). Our experiments show that, on the current
+dataset, the proposed solution obtains good quality results. It also suggests
+that, having a bigger dataset in the future will allow us to obtain a classifier
+that can recognize and characterise universally all the different tumours in the
+brain. To conclude, while current diagnoses of brain tumours are invasive with
+many potential side effects and not available in real-time since they require
+off-line histopathology sample analysis, with the proposed system, these issues
+can be overcome and tumour resection can be greatly improved during surgery
+procedures.
+
+
+Daniele Ravi
+d.ravi@imperial.ac.uk
+% ----------------------------------------------------------------------------
+\section*{Minimizing application deployment cost using spot cloud resources}
+
+
+Performance assessment of cloud-based applications requires new methodologies to
+deal with the complexity of software systems and the variability of spot cloud
+resources. The spot instance model is a virtual machine pricing scheme in which
+some resources of cloud providers are offered to the highest bidder. This leads
+to the formation of a spot price, whose fluctuations can determine customers to
+be overbid by other users and lose the virtual machine they rented. In this
+presentation, we address the problem of reducing the total costs for running
+cloud-based applications while fulfilling service-level objectives (SLOs). To
+this end, we propose (i) a heuristic that, given the model of an application, it
+determines an optimal set of cloud resources to deploy it, and an optimal
+bidding strategy; (ii) a model-driven application refactoring strategy to
+further optimise the result. The performance of our method is compared to that
+of nonlinear programming and shown to markedly accelerate the finding of
+low-cost optimal solutions.
+
+
+Daniel J. Dubois
+daniel.dubois@imperial.ac.uk
+% ----------------------------------------------------------------------------
+\section*{Dense 3D reconstruction and modelling of faces: addressing the
+real-world challenges}
+
+
+Human face is one of the most commonly considered object in
+Computer Vision and Computer Graphics. Modelling and reconstructing the detailed
+3D shape and dynamics of the human face has numerous applications, including
+facial expression recognition, facial recognition/verification, human-computer
+interaction, augmented reality, performance capture, computer games, visual
+effects and craniofacial surgery.
+
+Despite the important advances in this field, the existing methods have several
+limitations, since they can only work reliably under restrictive acquisition
+conditions and for certain demographic groups. In this talk, I will present our
+recent and ongoing work on overcoming these limitations, by developing novel
+methodologies of dense 3D reconstruction and modelling of human faces that deal
+with challenging real-life image data.
+
+In more detail, I will first discuss about our research on dense 3D
+reconstruction of faces from monocular videos. I will show how, adopting novel
+variational formulations and appropriate face models, we achieve accuracy and
+robustness to especially challenging scenarios that often arise in real-world
+face videos, such as low-resolution images, severe occlusions and strong
+illumination changes.
+
+Furthermore, I will demonstrate the 3D face model (3D Morphable Model - 3DMM)
+that we have recently built from a database of high-quality 3D scans of around
+10,000 distinct facial identities. This is the largest-scale 3DMM of faces ever
+constructed, containing statistical information from a huge range of gender,
+age, and ethnicity combinations. I will finally present our robust and fully
+automatic pipeline for constructing 3DMMs of this scale.
+
+
+Anastasios (Tassos) Roussos
+a.roussos@imperial.ac.uk
+\end{document}
