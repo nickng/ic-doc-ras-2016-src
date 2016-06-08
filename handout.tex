@@ -18,15 +18,15 @@
 \newcommand{\talk}[1]{\Large\flushleft\textbf{#1}\\}
 \newcommand{\speaker}[1]{\textit{#1}\\}
 \newcommand{\separator}{\noindent\rule{\linewidth}{0.1mm}}
-\newcommand{\votebox}{\noindent\hfill\framebox(20,20){}}
-\newcommand{\hstrut}{\noindent\rule{\linewidth}{0pt}}
+\newcommand{\votebox}{\vspace{-5cm}\noindent\hfill\framebox(20,20){}}
+\newcommand{\hstrut}{\noindent\color{iclightblue}\rule{\linewidth}{0pt}}
 
 \begin{document}
-\textbf{\flushleft\Huge Computing RA Symposium 2016}\hfill{}14\textsuperscript{th} June 2016\\
-\textbf{\flushleft\LARGE Schedule}\\[0.5cm]
+\textbf{\flushleft\Huge Computing RA Symposium 2016}\hfill{}Tuesday 14\textsuperscript{th} June 2016\\
+\textbf{\flushleft\LARGE\color{icdarkblue}Schedule}\hfill{}Huxley Building LT145\\[0.5cm]
 
 \renewcommand{\arraystretch}{1.2}
-\begin{tabular}{r@{\quad\color{icdarkblue}{\vline}\quad}p{10cm}@{\quad\color{gray!30}{\vline}\quad}l}
+\begin{tabular}{r@{\quad\color{icdarkblue}{\vline}\quad}p{10cm}@{\quad\color{iclightblue}{\vline}\quad}l}
   10:00--10:15
   & Opening and welcome by \textbf{Postdoc Development Centre} (PDC)
   & \\
@@ -38,50 +38,53 @@
   & Computational imaging for digitizing shape and appearance of ``hard-to-scan'' materials
   & \textit{Ilya Reshetouski}
   \\[0.8cm]
-  \textcolor{gray}{11:00--11:15}
-  & \textit{Break}
+  \textcolor{gray}{10:55--11:05}
+  & \textit{\color{gray}Break}
   & \\[0.3cm]
-  11:15--11:35
+  11:05--11:25
   & DropNeuron: An Approach for Simplifying the Structure of Deep Neural Networks
   & \textit{Wei Pan}\\
-  11:35--11:55
+  11:25--11:45
   & Transfer Learning for Optimal Configuration of Big Data Software
-  & \textit{Pooyan Jamshidi}\\[0.8cm]
-  \textcolor{gray}{12:00--12:15}
-  & \textit{Break}
+  & \textit{Pooyan Jamshidi}\\
+  11:45--12:05
+  & Collective Perception
+  & \textit{Sajad Saeedi}\\[0.3cm]
+  \textcolor{gray}{12:05--12:20}
+  & \textit{\color{gray}Break}
   & \\[0.3cm]
-  12:15--12:35
+  12:20--12:40
   & Semantic Segmentation on Embedded Hyperspectral Images for Brain Cancer Detection
-  & Daniele Ravi\\
-  12:35--12:55
+  & \textit{Daniele Ravi}\\
+  12:40--13:00
   & Deep Learning via Simulation for Robot Grasping
   & Edward Johns\\[0.3cm]
   \textcolor{gray}{13:00--14:00}
-  & \textit{Lunch}
+  & \textit{\color{gray}Lunch}
   & \\[0.3cm]
   14:00--15:00
-  & {\large\bf Keynote --- Raia Hadsell Google DeepMind}
-  & Raia Hadsell\\
+  & {\large\bf Keynote --- Raia Hadsell, Google DeepMind}
+  & \textit{Raia Hadsell}\\
   \textcolor{gray}{15:00--15:30}
-  & \textit{Coffee Break}
+  & \textit{\color{gray}Coffee Break}
   & \\[0.3cm]
   15:30--15:50
   & Learning for 3D Scene Understanding
-  & Ankur Handa\\
+  & \textit{Ankur Handa}\\
   15:50--16:10
   & Static Deadlock Detection for Go based on Session Graph Synthesis
-  & Nicholas Ng \\[0.8cm]
+  & \textit{Nicholas Ng}\\[0.8cm]
   \textcolor{gray}{16:10--16:20}
-  & \textit{Break}
+  & \textit{\color{gray}Break}
   & \\[0.3cm]
   16:20--16:40
   & Minimizing application deployment cost using spot cloud resources
-  & Daniel J. Dubois\\
+  & \textit{Daniel J. Dubois}\\
   16:40--17:00
   & Dense 3D reconstruction and modelling of faces: addressing the real-world challenges
-  & Anastasios Roussos \\[0.8cm]
+  & \textit{Anastasios Roussos}\\[0.8cm]
   17:00
-  & \textit{Break}, Prize giving, and Closing
+  & Prize giving and Closing
   & \\
 \end{tabular}
 \vfill
@@ -95,10 +98,12 @@
 To view schedule with full abstracts, scan QR code or visit
 \href{http://wp.doc.ic.ac.uk/postdoc/ra-symposium-2016}
      {wp.doc.ic.ac.uk/postdoc/ra-symposium-2016}
+\\[0.5cm]
+{\small Contact organisers: Luigi Nardi, Nicholas Ng --- \texttt{\{l.nardi,nickng\}@imperial.ac.uk}}
 \end{minipage}
 \clearpage
 \noindent
-\textbf{\flushleft\LARGE Best Presentation Voting}\hfill\textit{Please hand this to organisers before 5pm}\\
+\textbf{\flushleft\LARGE\color{icdarkblue}Best Presentation Voting}\hfill\textit{Please hand this to organisers before 5pm}\\
 % Session 1
 \noindent
 \begin{minipage}[t]{0.49\linewidth}
@@ -158,43 +163,69 @@ To view schedule with full abstracts, scan QR code or visit
 \noindent
 \begin{minipage}[t]{0.49\linewidth}
 \separator%
-\talk{Semantic Segmentation on Embedded Hyperspectral Images for Brain Cancer
-      Detection}
-\speaker{Daniele Ravi}
+\talk{Collective Perception}
+\speaker{Sajad Saeedi}
 \end{minipage}
 \begin{minipage}[t]{0.02\linewidth}
 \hstrut%
 \end{minipage}
+\begin{minipage}[t]{0.49\linewidth}
+\separator%
+\talk{Semantic Segmentation on Embedded Hyperspectral Images for Brain Cancer
+      Detection}
+\speaker{Daniele Ravi}
+\end{minipage}
+\vfill
+\noindent
+\begin{minipage}[b]{0.49\linewidth}
+\votebox%
+\end{minipage}
+\begin{minipage}[b]{0.02\linewidth}
+\hstrut%
+\end{minipage}
+\begin{minipage}[b]{0.49\linewidth}
+\votebox%
+\end{minipage}
+\noindent
 \begin{minipage}[t]{0.49\linewidth}
 \separator%
 \talk{Deep Learning via Simulation for Robot Grasping}
 \speaker{Edward Johns}
 \end{minipage}
-\vfill
-\noindent
-\begin{minipage}[b]{0.49\linewidth}
-\votebox%
-\end{minipage}
-\begin{minipage}[b]{0.02\linewidth}
+\begin{minipage}[t]{0.02\linewidth}
 \hstrut%
 \end{minipage}
-\begin{minipage}[b]{0.49\linewidth}
-\votebox%
-\end{minipage}
 % Session 4
-\noindent
 \begin{minipage}[t]{0.49\linewidth}
 \separator%
 \talk{Learning for 3D Scene Understanding}
 \speaker{Ankur Handa}
 \end{minipage}
-\begin{minipage}[t]{0.02\linewidth}
+\vfill
+\noindent
+\begin{minipage}[b]{0.49\linewidth}
+\votebox%
+\end{minipage}
+\begin{minipage}[b]{0.02\linewidth}
 \hstrut%
 \end{minipage}
+\begin{minipage}[b]{0.49\linewidth}
+\votebox%
+\end{minipage}
+\noindent
 \begin{minipage}[t]{0.49\linewidth}
 \separator%
 \talk{Static Deadlock Detection for Go based on Session Graph Synthesis}
 \speaker{Nicholas Ng}
+\end{minipage}
+\begin{minipage}[t]{0.02\linewidth}
+\hstrut%
+\end{minipage}
+% Session 5
+\begin{minipage}[t]{0.49\linewidth}
+\separator%
+\talk{Minimizing application deployment cost using spot cloud resources}
+\speaker{Daniel J. Dubois}
 \end{minipage}
 \vfill
 \noindent
@@ -207,22 +238,19 @@ To view schedule with full abstracts, scan QR code or visit
 \begin{minipage}[b]{0.49\linewidth}
 \votebox%
 \end{minipage}
-% Session 5
 \noindent
-\begin{minipage}[t]{0.49\linewidth}
-\separator%
-\talk{Minimizing application deployment cost using spot cloud resources}
-\speaker{Daniel J. Dubois}
-\end{minipage}
-\begin{minipage}[t]{0.02\linewidth}
-\hstrut%
-\end{minipage}
 \begin{minipage}[t]{0.49\linewidth}
 \separator%
 \talk{Dense 3D reconstruction and modelling of faces: addressing the real-world
       challenges}
 \speaker{Anastasios Roussos}
 \end{minipage}
+\begin{minipage}[t]{0.02\linewidth}
+\hstrut%
+\end{minipage}
+\begin{minipage}[t]{0.49\linewidth}
+\separator%
+\end{minipage}
 \vfill
 \noindent
 \begin{minipage}[b]{0.49\linewidth}
@@ -232,7 +260,7 @@ To view schedule with full abstracts, scan QR code or visit
 \hstrut%
 \end{minipage}
 \begin{minipage}[b]{0.49\linewidth}
-\votebox%
+\hstrut%
 \end{minipage}
 \noindent
 \begin{minipage}[t]{0.49\linewidth}
@@ -242,6 +270,6 @@ To view schedule with full abstracts, scan QR code or visit
 \hstrut%
 \end{minipage}
 \begin{minipage}[t]{0.49\linewidth}
-\separator%
+\hstrut%
 \end{minipage}
 \end{document}
