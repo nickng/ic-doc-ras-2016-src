@@ -5,6 +5,9 @@
 \usepackage[margin=0em]{geometry}
 \usepackage[hidelinks]{hyperref}
 
+\hyphenpenalty=10000
+\hbadness=10000
+
 \definecolor{icdarkblue}{RGB}{0,51,102}
 \definecolor{icmiddleblue}{RGB}{0,82,150}
 \definecolor{iclightblue}{RGB}{200,212,232}
@@ -13,49 +16,60 @@
 
 \begin{document}
 \begin{tcolorbox}[colback=iclightblue,colframe=iclightblue,width=\textwidth,sharp corners]
-  \vskip 3cm
+  \vskip 2cm
 \noindent
 {\fontsize{1.8cm}{2cm}\selectfont \color{gray}The \textbf{2016} Department of Computing}\\[3mm]
 \noindent
 {\fontsize{5cm}{6cm}\selectfont \color{icdarkblue} \textbf{RA}}\\
-{\fontsize{5cm}{6cm}\selectfont \color{icdarkblue} \textbf{Symposium}}\\[3cm]
+{\fontsize{5cm}{6cm}\selectfont \color{icdarkblue} \textbf{Symposium}}\\[1cm]
 \end{tcolorbox}
+\vspace{0.5cm}
 \begin{center}
   \LARGE
   \begin{tabular}{rl}
   \textbf{Date} & Tuesday 14\textsuperscript{th} June 2016\\
+  \textbf{Time} & \textit{10:00--17:00}\\
   \textbf{Venue}& Huxley Building LT145\\
   \end{tabular}
 \end{center}
 \begin{tcolorbox}[colback=iclightblue,colframe=iclightblue,width=\textwidth,sharp corners]
-  \vskip 3cm
+  \textcolor{icmiddlered}{\textbf{\Large 1 Keynote}}\\
+\begin{center}
+  \Large
+  \textcolor{icdarkblue}{\bf\LARGE Raia Hadsell (Google DeepMind)}\\
+  \textbf{2pm TODAY} in LT145\\
+\end{center}
+\textcolor{icmiddlered}{\Large\textbf{11 Talks}}\\
+\begin{center}
+  \Large
+  \textcolor{icdarkblue}{\bf Department of Computing RAs}\\
+  on a wide range of interesting research projects
+  \\
+  {\normalsize Full schedule: scan QR code or visit
+\href{http://wp.doc.ic.ac.uk/postdoc/ra-symposium-2016}
+     {wp.doc.ic.ac.uk/postdoc/ra-symposium-2016}
+  }
+\end{center}
+\vspace{0.5cm}
+\end{tcolorbox}
 %\begin{center}
-%  \parbox{0.8\textwidth}{\Large
+%  \parbox{0.8\textwidth}{
 %  The \textbf{RA Symposium} is a one-day event for research associates in the Department of
 %  Computing to present their work to other research associates, staff and PhD
 %  students. The aim of the symposium is to showcase the wide range of interesting
 %  research projects in the department to all staff members.}
+%  \vskip 1cm
 %\end{center}
-\Large\textbf{\color{icmiddlered}Call for abstracts}\\
-Postdoc? Want to present your work to the department? \textit{There will be prizes!} Email an abstract to
-\vspace{1.5cm}
-\begin{center}
-\url{nickng@imperial.ac.uk}
-\end{center}
-\begin{center}
-by Tuesday 24\textsuperscript{th} May 2016.
-\end{center}
-\vspace{1.5cm}
-\end{tcolorbox}
 \vfill
 \noindent
-\begin{minipage}{0.18\linewidth}
-  \includegraphics{qr.png}
+\begin{minipage}{0.13\linewidth}
+  \includegraphics[width=\linewidth]{qr.png}
 \end{minipage}
-\begin{minipage}{0.8\linewidth}
-\large
-\quad
+\begin{minipage}{0.85\linewidth}
+\flushright
 \href{http://wp.doc.ic.ac.uk/postdoc/ra-symposium-2016}
      {wp.doc.ic.ac.uk/postdoc/ra-symposium-2016}
+\\[0.5cm]
+{\small Contact: Luigi Nardi, Nicholas Ng --- \texttt{\{l.nardi,nickng\}@imperial.ac.uk}}
 \end{minipage}
 \end{document}
